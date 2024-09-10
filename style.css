@@ -283,3 +283,30 @@ services-container {
 
 /**************************************/
 /* breakpoints Responsive */
+
+@media screen and(max-width:780px) {
+  #burger-menu {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    flex-direction: column;
+    width: 280px;
+    min-height: 100vh;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 0 1rem;
+    transition: 0.2s ease-in-out;
+    border-left: 1px solid var(--accent);
+    background: var(--bg);
+  }
+
+  .navigation a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .navigation.active {
+    right: 0;
+  }
+}
