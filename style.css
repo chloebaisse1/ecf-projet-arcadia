@@ -222,8 +222,9 @@ services-container {
   text-align: center;
   padding: 20px;
   padding-top: 8rem;
-  background: rgba(255, 244, 243, 7);
+  background: transparent;
   transition: 0.2s ease-in-out;
+  color: white;
 }
 
 .services-content h4 {
