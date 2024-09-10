@@ -260,5 +260,26 @@ services-container {
   border-color: var(--accent1);
 }
 
+.contact-container form textarea {
+  height: 150px;
+  resize: none;
+}
+.contact-container form input[type="submit"] {
+  cursor: pointer;
+}
+
 /**************************************/
 /* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--accent2);
+  color: var(--bg);
+  font-size: 13px;
+  text-align: center;
+}
+
+/**************************************/
+/* breakpoints Responsive */
