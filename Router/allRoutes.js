@@ -12,7 +12,7 @@ export const allRoutes = [
     "/pages/signup.html",
     "/js/auth/signup.js"
   ),
-  new Route("/signin", "Connexion", "/pages/signin.html"),
+  new Route("/signin", "Connexion", "/pages/signin.html", "/js/auth/signin.js"),
 ]
 
 export const websiteName = "Arcadia Zoo"

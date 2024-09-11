@@ -1,33 +1,33 @@
 
-    <!--Connexion-->
+    <!--Inscription-->
     <section class="connexion" id="connexion">
       <div class="section-heading">
         <span>Page de connexion</span>
         <h2>Se connecter</h2>
       </div>
+  </div>
 
-      <div class="contact-container">
-        <form>
-          <label for="name">Nom</label>
-          <input type="text" placeholder="indiquez votre nom" />
-
-          <label for="prénom">Prenom</label>
-          <input type="text" placeholder="indiquez votre prénom" />
-
-          <label for="email">Email</label>
-          <input type="email" placeholder="indiquez votre email" />
-
-          <label for="password">Mot de passe</label>
-          <input type="password" placeholder="indiquez votre mot de passe" />
+  <div class="connexion-container">
+      <form>
+          <div class="mb-3">
+              <label for="NomInput" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="NomInput" placeholder="Votre nom">
           </div>
-          <div class="text-center pt-3">
-          <button type="button" class="btn">Connexion</button>
+
+          <div class="mb-3">
+            <label for="EmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr">
           </div>
-        </form>
-        <div class="text-center pt-3">
-          <a class="message" href="/signup">Vous n'avez pas de compte ? Inscrivez vous ici !</a>
-        </div>
+
+          <div class="mb-3">
+            <label for="PasswordInput" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="PasswordInput">
+          </div>
+          <div class="text-center">
+              <button type="button" class="btn" id="btnSignin">Connexion</button>
+          </div>
+      </form>
+      <div class="text-center pt-3">
+          <a class="message" href="/signin">Vous avez déjà un compte ? Connectez-vous ici!</a>
       </div>
-    </section>
-  </body>
-</html>
+  </div>
