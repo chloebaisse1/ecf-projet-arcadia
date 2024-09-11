@@ -270,6 +270,75 @@ services-container {
 }
 
 /**************************************/
+/* Inscription */
+.inscription-container form {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.inscription-container form input,
+.inscription-container form textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #b4c978;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+}
+
+.inscription-container form input:focus,
+.inscription-container form textarea:focus {
+  border-color: var(--accent1);
+}
+
+.inscription-container form textarea {
+  height: 150px;
+  resize: none;
+}
+.inscription-container form input[type="submit"] {
+  cursor: pointer;
+}
+.message {
+  color: var(--accent2);
+  text-align: center;
+}
+/**************************************/
+/* Connexion */
+
+.connexion-container form {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.connexion-container form input,
+.connexion-container form textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #b4c978;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+}
+
+.connexion-container form input:focus,
+.connexion-container form textarea:focus {
+  border-color: var(--accent1);
+}
+
+.connexion-container form textarea {
+  height: 150px;
+  resize: none;
+}
+.connexion-container form input[type="submit"] {
+  cursor: pointer;
+}
+.message {
+  color: var(--accent2);
+  text-align: center;
+}
+/**************************************/
 /* la savane */
 
 .savane-container {

@@ -1,35 +1,55 @@
 
     <!--Inscription-->
-
-
-    <section class="inscription" id="inscription">
+    <section class="connexion" id="connexion">
       <div class="section-heading">
         <span>Page d'inscription</span>
         <h2>S'inscrire</h2>
       </div>
+  </div>
 
-      <div class="contact-container">
-        <form>
-          <label for="name">Nom</label>
-          <input type="text" placeholder="indiquez votre nom" />
-
-          <label for="prenom">Prénom</label>
-          <input type="text" placeholder="indiquez votre prénom" />
-
-          <label for="email">Email</label>
-          <input type="email" placeholder="indiquez votre email" />
-
-          <label for="password">Mot de passe</label>
-          <input type="password" placeholder="indiquez votre mot de passe" />
+  <div class="inscription-container">
+      <form>
+          <div class="mb-3">
+              <label for="NomInput" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="NomInput" placeholder="Votre nom">
+              <div class="invalid-feedback">
+                Le nom est requis
+              </div>
           </div>
-          <div class="text-right pt-3">
-          <button type="button" class="btn btn-primary">Inscription</button>
+          <div class="mb-3">
+              <label for="PrenomInput" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom">
+              <div class="invalid-feedback">
+                Le prénom est requis
+              </div>
           </div>
-        </form>
-        <div class="text-center pt-3">
-          <a href="/signin.html" class="message">Vous avez déjà un compte ? Connectez vous ici !</a>
-        </div>
+          <div class="mb-3">
+            <label for="EmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr">
+            <div class="invalid-feedback">
+              Le mail n'est pas au format
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="PasswordInput" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="PasswordInput">
+            <div class="invalid-feedback">
+              Le mot de passe n'est pas assez robuste : Au moins 8 caractères, comprenant des lettres, des chiffres et des caractères spéciaux.
+            </div>
+            <div class="valid-feedback">
+              Le mot de passe est robuste
+            </div>
+          </div>
+
+          <div class="mb-3">
+              <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+              <input type="password" class="form-control" id="ValidatePasswordInput">
+            </div>
+          <div class="text-center">
+              <button type="submit" class="btn" id="btn-validation-inscription">Inscription</button>
+          </div>
+      </form>
+      <div class="text-center pt-3">
+          <a class="message" href="/signin">Vous avez déjà un compte ? Connectez-vous ici!</a>
       </div>
-    </section>
-</body>
-</html>
+  </div>
