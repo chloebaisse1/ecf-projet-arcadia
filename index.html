@@ -15,12 +15,23 @@
     <nav>
       <a href="/" class="logo">Arcadia <span>Zoo</span></a>
       <ul class="navigation">
-        <li><a href="/" class="active">Accueil</a></li>
-        <li><a href="#habitats">Habitats</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/signin">Connexion</a></li>
-        <li>
+        <li class="nav-item">
+          <a  class="nav-link" href="/" class="active">Accueil</a>
+        </li>
+          <li class="nav-item">
+            <a  class="nav-link" href="#habitats">Habitats</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item" data-show="disconnected">
+            <a  class="nav-link"href="/signin">Connexion</a>
+          </li>
+
+          <li class="nav-item" data-show="connected">
           <button class="nav-link" id="signout-btn">Déconnexion</button>
         </li>
       </ul>
