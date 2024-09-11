@@ -11,6 +11,13 @@ function checkCredentials() {
   if (nameInput && mailInput.value === "" && passwordInput.value === "") {
     alert("Vous êtes connecté")
 
+    // recuperation du vrai token
+    const token =
+      /*****************************vrai token a recup  */
+      setToken(token)
+
+    // placer ce token en cookie
+
     window.location.replace("/")
   } else {
     nameInput.classList.add("is-invalid")
