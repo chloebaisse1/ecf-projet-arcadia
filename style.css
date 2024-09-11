@@ -424,6 +424,14 @@ services-container {
 }
 
 /**************************************/
+/* Page de connexion */
+
+.message {
+  color: #c0896c;
+  text-align: center;
+}
+
+/**************************************/
 /* breakpoints Responsive */
 
 @media screen and(max-width:780px) {
